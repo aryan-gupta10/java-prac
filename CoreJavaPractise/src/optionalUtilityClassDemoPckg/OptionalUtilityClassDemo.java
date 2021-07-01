@@ -1,4 +1,4 @@
-package optional.utilityClass.demo.pckg;
+package optionalUtilityClassDemoPckg;
 
 import java.util.Optional;
 
