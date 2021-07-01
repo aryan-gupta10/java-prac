@@ -1,1 +1,17 @@
 ----------------------------------------------Notes----------------------------------------------
+
+***********************
+Garbage Collection
+***********************
+-> Garbage collection only happends in the **heap** area.
+-> Way to request JVM to run garbage collector
+    - System.gc()
+    - Runtime.getRuntime().gc()
+-> The **finalize()** method of Object class is a method that the Garbage Collector always calls just before the deletion/destroying the object which is eligible for Garbage   Collection, so as to perform clean-up activity. Clean-up activity means closing the resources associated with that object like Database Connection, Network Connection or we can say resource de-allocation
+-> JVM allows finalize() to be invoked **only once** per object.
+-> Garbage collector is a background/daemon thread and it runs only when all the non-daemon/foreground threads stop.
+-> JVM performs garbage collection in two steps:
+     - Marking: Unreferenced objects in heap are identified and marked as ready for garbage collection.
+     - Deletion: In this step, the objects which were marked earlier are deleted.
+
+----------------------------------------------------------------------------------------------------------------------------
