@@ -15,3 +15,7 @@ Garbage Collection
      - Deletion: In this step, the objects which were marked earlier are deleted.
 
 --------------------------------------------------------------------------------------------
+***********************
+Comparator
+***********************
+-- Returning 1 from 'compare(T i, T j)' method means 'swap', '-1' means don't swap, '0' means ignore.
