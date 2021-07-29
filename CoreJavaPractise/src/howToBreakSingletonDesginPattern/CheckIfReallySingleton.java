@@ -5,8 +5,8 @@ public class CheckIfReallySingleton
 
 	public static void main(String[] args)
 	{
-		Singleton firstSingletonObject = Singleton.getInstance();
-		Singleton secondSingletonObject = Singleton.getInstance();
+		SingletonDemo firstSingletonObject = SingletonDemo.getInstance();
+		SingletonDemo secondSingletonObject = SingletonDemo.getInstance();
 		
 		
 		// Hashcode of both the objects should be same
