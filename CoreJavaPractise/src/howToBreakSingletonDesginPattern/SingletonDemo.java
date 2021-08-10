@@ -2,8 +2,10 @@ package howToBreakSingletonDesginPattern;
 
 import java.io.Serializable;
 
-public class SingletonDemo implements Serializable
+public class SingletonDemo implements Serializable, Cloneable
 {
+
+	private static final long serialVersionUID = -6342477255081451092L;
 	private static SingletonDemo singletonObject;
 	
 	private SingletonDemo()
@@ -24,6 +26,12 @@ public class SingletonDemo implements Serializable
 			}
 		}
 		return singletonObject;
+	}
+	
+	@Override
+	protected Object clone() throws CloneNotSupportedException
+	{
+		return super.clone();
 	}
 
 }
