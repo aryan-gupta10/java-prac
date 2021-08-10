@@ -28,6 +28,8 @@ public class SingletonDemo implements Serializable, Cloneable
 		return singletonObject;
 	}
 	
+	
+	// Overriding clone() method is insignificant if we are using Reflection or Serialization method to break Singleton but is required if we are using Clonable technique 
 	@Override
 	protected Object clone() throws CloneNotSupportedException
 	{
