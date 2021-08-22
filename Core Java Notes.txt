@@ -19,3 +19,14 @@ Garbage Collection
 Comparator
 ***********************
 -- Returning 1 from 'compare(T i, T j)' method means 'swap', '-1' means don't swap, '0' means ignore.
+
+
+--------------------------------------------------------------------------------------------
+***********************
+String
+***********************
+- String objected created using 'new' is stored in heap memory, however, String literals gets stored in String Constant Pool.
+- String and StringBuffer are thread safe, StringBuilder is not.
+- StringBuffer is implemented by using Synchronized keyword on all the methods.
+- String is thread safe because String objects are immutable, so everytime a thread makes some modifications to a String value, a new String object is created, therefore there is no point of inconsistent value.
+
