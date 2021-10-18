@@ -1,4 +1,4 @@
-package howToBreakSingletonDesginPattern;
+package interviewQuestions.howToBreakSingletonDesginPattern;
 
 public class BreakSingletonUsingClonable
 {
